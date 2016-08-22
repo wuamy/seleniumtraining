@@ -1,5 +1,6 @@
 package autoFramework;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -20,12 +21,20 @@ public class FirstTestCase {
         System.out.println("Successfully opened the website");
 
         //login to a user account
+        driver.findElement(By.cssSelector(".account_icon")).click();
+        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+
+        //enter user id and password
+        driver.findElement(By.cssSelector("#log")).sendKeys("amy");
+        driver.findElement(By.cssSelector("#pwd")).sendKeys("c3qKYLErI*IClnTO");
+        driver.findElement(By.cssSelector("#login")).click();
+
 
 
         //wait for 5 second
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
         //Close the driver
-        driver.quit();
+        //driver.quit();
     }
 }
