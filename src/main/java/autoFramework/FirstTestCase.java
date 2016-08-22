@@ -28,8 +28,8 @@ public class FirstTestCase {
         driver.findElement(By.cssSelector("#log")).sendKeys("amy");
         driver.findElement(By.cssSelector("#pwd")).sendKeys("c3qKYLErI*IClnTO");
         driver.findElement(By.cssSelector("#login")).click();
-
-
+        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.findElement(By.cssSelector("#account_logout>a")).click();
 
         //wait for 5 second
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
