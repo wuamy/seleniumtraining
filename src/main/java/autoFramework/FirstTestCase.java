@@ -19,6 +19,9 @@ public class FirstTestCase {
         //print a log on the screen
         System.out.println("Successfully opened the website");
 
+        //login to a user account
+
+
         //wait for 5 second
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
