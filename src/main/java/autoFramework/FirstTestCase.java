@@ -15,6 +15,7 @@ public class FirstTestCase {
         WebDriver driver = new FirefoxDriver();
 
         //launch the online store website
+        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
         driver.get("http://store.demoqa.com/");
 
         //print a log on the screen
