@@ -1,4 +1,4 @@
-package autoFramework.appModule;
+package appModule;
 
 import org.openqa.selenium.WebDriver;
 import pageObjects.*;
