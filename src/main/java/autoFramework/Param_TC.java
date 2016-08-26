@@ -1,15 +1,15 @@
 package autoFramework;
-import java.util.concurrent.TimeUnit;
 
-import appModule.SignIn_Action;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import pageObjects.*;
+import pageObjects.Home_Page;
+import appModule.SignIn_Action;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by amy on 8/22/2016.
  */
-public class POM_TC {
+public class Param_TC {
     private static WebDriver driver = null;
 
     public static void main(String[] args){
@@ -25,7 +25,7 @@ public class POM_TC {
 
         //login to a user account
         //Home_Page.lnk_MyAccount(driver).click();
-        //SignIn_Action.Execute(driver);
+        SignIn_Action.Execute(driver,"amy","c3qKYLErI*IClnTO");
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 
         //enter user id and password
