@@ -1,5 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite One">
+    <listeners>
+        <listener class-name="utility.Listener"></listener>
+    </listeners>
     <test name ="Test One">
         <classes>
             <class name="autoFramework.TestNG_Framework" />
