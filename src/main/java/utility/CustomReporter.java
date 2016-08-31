@@ -13,6 +13,7 @@ import org.testng.xml.XmlSuite;
 /**
  * Created by amy on 8/31/2016.
  * here is an example http://stackoverflow.com/questions/10219640/create-custom-testng-report-webdriver
+ * https://www.seleniumeasy.com/testng-tutorials/testng-customize-emailable-html-report-example
  */
 public class CustomReporter implements IReporter {
     @Override
