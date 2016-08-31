@@ -31,13 +31,13 @@ public class TestNG_MultiBrowser {
         // check if parameter passed as 'chrome'
         else if (browser.equalsIgnoreCase("chrome")){
             //set path to chrome driver
-            System.setProperty("webdriver.chrome.driver", "C:\\SeleniumPR\\chromedriver");
+            System.setProperty("webdriver.chrome.driver", "C:\\SeleniumPR\\chromedriver.exe");
             //create chrome instance
             driver = new ChromeDriver();
 
         } else if (browser.equalsIgnoreCase("ie")){
             //set path to IEdriver.exe
-            System.setProperty("webdriver.ie.driver","C:\\SeleniumPR\\IEDriverServer");
+            System.setProperty("webdriver.ie.driver","C:\\SeleniumPR\\IEDriverServer.exe");
             driver = new InternetExplorerDriver();
         }
         else {

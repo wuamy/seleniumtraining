@@ -4,8 +4,9 @@
         <listener class-name="utility.CustomReporter"></listener>
     </listeners>
     <test name ="Test One">
+        <parameter name="browser" value="chrome" />
         <classes>
-            <class name="autoFramework.TestNG_Framework" />
+            <class name="autoFramework.TestNG_MultiBrowser" />
         </classes>
     </test>
 </suite>
